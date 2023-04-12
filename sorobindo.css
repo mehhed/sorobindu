@@ -1,0 +1,123 @@
+/* navigation section  */
+nav{
+    background-image: linear-gradient(-200deg, #40c6a1, #185b9d);
+}
+body{
+    background-color: #f5f5f5;
+}
+section{
+    padding:0% 5%;
+}
+
+/* home page css  */
+.my-img img{
+    border-radius: 100% !important;
+    width: 35%;
+    height: 177px;
+    object-fit: cover;
+    object-position: center;
+}
+.my-img .box{
+    height: 400px !important;
+}
+.mark-roted{
+    transform: rotate(270deg) !important;
+}
+
+
+/* overview css  */
+.box-shadow{
+    box-shadow: 0px -1px #00bcd4;
+}
+.after{
+    position: relative;
+}
+.after::after{
+    content: '';
+    height: 1px;
+    width: 98%;
+    background-color: #c5c5c5;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+}
+.ff{
+    background-color: #eeeeee !important;
+}
+.ff:focus{
+    outline: none !important;
+    box-shadow: none !important;
+
+}
+
+/* paymet page css */
+.box-shadow-left{
+    box-shadow: -3px 0px #00bcd4;
+}
+.my-payment-wallet{
+    position: relative;
+}
+.my-payment-wallet::after {
+    content: "\f53d";
+    position: absolute;
+    left: 25px;
+    top: -18px;
+    font-family: fontawesome;
+    font-size: 80px;
+    opacity: .3;
+}
+
+/* today goal page css  */
+.box-shadow-top{
+    box-shadow: 0px -3px #2980b9;
+}
+
+.justify-class{
+    flex-wrap:wrap;
+}
+.box-shadow-top-red{
+    box-shadow: 0px -1px #d40000;
+}
+.box-shadow-top-green{
+    box-shadow: 0px -1px #4caf50;
+}
+.box-shadow-top-primary{
+    box-shadow: 0px -1px #2196f3;
+}
+
+
+/* class page css  */
+input:focus{
+    outline: none;
+    box-shadow: none !important;
+}
+
+
+/* my batch page css  */
+.liner{
+    background-image: linear-gradient(63deg, #1c9eef, #0e73ca) !important;
+    box-shadow: 0px 0px 20px #1c9eefa7;
+}
+
+
+
+/* massage i-con css  */
+.massenger{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(12 156 240);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 9%;
+    right: 1.6%;
+    position: fixed;
+    }
+    .massenger i{
+        font-size: xx-large;
+    }
+    .massenger a{
+        color: white;
+    }

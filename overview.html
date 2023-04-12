@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- bootstrap 5 css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="https://app.sorobindu.com/web/img/fav.png" type="image/x-icon">
+    <!-- font awsoem  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- main css  -->
+    <link rel="stylesheet" href="sorobindo.css">
+
+    <title>sorobindu.com</title>
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar  navbar-expand-lg  px-4 ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="https://app.sorobindu.com/backend/assets/images/logo_light.png" style="width: 70px;" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 ms-5 mb-lg-0">
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active  text-light" aria-current="page" href="sorobindo.html"><span class="fa-solid fa-house"></span> Dashboard</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link text-light" href="overview.html">Overview</a>
+                  </li>
+                  
+                  <li class="nav-item mx-2">
+                    <a class="nav-link text-light" href="my-batch.html">My Batch</a>
+                  </li>
+                  
+                  <li class="nav-item mx-2">
+                    <a class="nav-link text-light" href="today-gol.html">Today Goal</a>
+                  </li>
+
+                               <!-- gggggggggggggggggg -->
+
+                  <li class="nav-item mx-2">
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Class list
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item " href="class.html">Class </a></li>
+                        <li><a class="dropdown-item " href="live-class.html"> Live Class</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link  text-light" href="improv.html">Improve Score</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link text-light" href="payment.html">Payments </a>
+                  </li>
+                            <!-- page kora baki ase  -->
+                  <li class="nav-item mx-2">
+                    <div class="dropdown">
+                      <button class="btn  dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Support
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">General Support </a></li>
+                        <li><a class="dropdown-item" href="#"> Marketplace Support</a></li>
+                        <li><a class="dropdown-item" href="#"> Co-Instructor Support </a></li>
+                        <li><a class="dropdown-item" href="#"> Course Instructions </a></li>
+                        <li><a class="dropdown-item" href="#"> Course Overview </a></li>
+                      </ul>
+                    </div>
+                  </li>
+
+                </ul>
+                <a href="" class="mx-3 text-light"><span class="fa-solid fa-comments"></span></a>
+                <div class="dropdown me-5">
+                  <button class="btn  dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Mehedi
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><i class=" me-1 fa-solid fa-user"></i>  My profile</a></li>
+                    <li><a class="dropdown-item" href="#"><i class=" me-1 fa-solid fa-book"></i> My Courses </a></li>
+                    <li><a class="dropdown-item" href="#"><i class=" me-1 fa-solid fa-money-bill"></i>  My Payments</a></li>
+                    <li><a class="dropdown-item" href="#"><i class=" me-1 fa-solid fa-certificate"></i>  My Certificate </a></li>
+                    <li><a class="dropdown-item" href="#"><i class=" me-1 fa-solid fa-trophy"></i>  My Success </a></li>
+                    <li><a class="dropdown-item" href="#"><i class=" me-1 fa-solid fa-right-from-bracket"></i>  Logout </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+      <div class="div w-100 border-bottom py-1">
+        <span class="fa-solid fa-house ms-4"></span> Home / Overview
+      </div>
+
+      <section>
+          <div class="border border-1 mt-3 box-shadow rounded-1">
+            <h4 class="text-center mt-3">Your Average success score based on your Practice time, Attendance, Classmark, Assignment & Quiz</h4>
+
+           <div class="progress m-3" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success fw-bold" style="width: 95.36%;"> 95.36% Success </div>
+           </div>
+          </div>
+          <div>
+             <div class="row w-100 p-3 border border-1 m-0 rounded-1">
+               <div class="col-lg-4">
+                Class Wise Performance
+               </div>
+               <div class="col-lg-4 text-center">
+                <div class="btn btn-outline-secondary rounded-1 m-0">All Class</div>
+                <div class="btn btn-outline-secondary rounded-1 m-0"> Last 30</div>
+                <div class="btn btn-outline-secondary rounded-1 m-0">Last 20</div>
+                <div class="btn btn-outline-secondary rounded-1 m-0">Last 10</div>
+               </div>
+               <div class="col-lg-4"></div>
+             </div>
+          </div>
+          <div class=" border border-1 rounded-1">
+
+             <div class="row w-100 m-0 mt-4">
+              <div class="col-lg-4"></div>
+              <div class="col-lg-4 text-center">
+                Class Wise
+              </div>
+              <div class="col-lg-4 text-end">
+                <span class="fa-solid fa-bars le-5"></span>
+              </div>
+             </div>
+
+
+              <div class="row w-100">
+                <div class="col-lg-1 position-relative mb-5">
+                  <small class="mark-roted position-absolute top-50">Mark in-(%)</small>
+                </div>
+                <div class="col-lg-11">
+                  <p class="after">100</p>
+                  <p  class="after">75</p>
+                  <p  class="after">50</p>
+                  <p  class="after">25</p>
+                  <p  class="after">0</p>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <div class="d-inline-block" style="width: 10px; height: 10px; border-radius: 50% ; background-color: #7cb6ecc4;"></div> Attend &nbsp; &nbsp;
+                <div class="d-inline-block" style="width: 10px; height: 10px; border-radius: 50% ; background-color: #000101;"></div> ClassMark &nbsp; &nbsp;
+                <div class="d-inline-block" style="width: 10px; height: 10px; border-radius: 50% ; background-color: #0bf671a0;"></div> Video &nbsp; &nbsp;
+                <div class="d-inline-block" style="width: 10px; height: 10px; border-radius: 50% ; background-color: #0778f9ac;"></div> Quiz &nbsp; &nbsp;
+                <div class="d-inline-block" style="width: 10px; height: 10px; border-radius: 50% ; background-color: #f90707ae;"></div> PracTime &nbsp; &nbsp;
+              </div>
+
+              <div class="text-center mt-3">
+                <p>This is your class wise five activities Performances, This Performance are daily updatable by your done activities. So please do your all given jobs carefully.</p>
+              </div>
+
+          </div>
+      </section>
+
+       <!-- present section  -->
+      <section>
+        <div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <div class="accordion-item my-2 border border-1">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed ff" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Absent/Present Class List
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="border border-1">
+                    <p class="d-block d-flex justify-content-sm-between px-5 bg-success bg-opacity-25 my-1"><span>Assignment on Class-01 (Day- 1,2,3,4)</span> <span class=" p-1 rounded-pill bg-success">Present</span></p>
+                    <p class="d-block d-flex justify-content-sm-between px-5 bg-success bg-opacity-25 my-1"><span>Assignment on Class-02 (Day- 5,6,7,8)</span> <span class=" p-1 rounded-pill bg-success">Present</span></p>
+                    <p class="d-block d-flex justify-content-sm-between px-5 bg-success bg-opacity-25 my-1"><span>Assignment on Class-03 (Day- 9,10,11,12)</span> <span class=" p-1 rounded-pill bg-success">Present</span></p>
+                    <p class="d-block d-flex justify-content-sm-between px-5 bg-success bg-opacity-25 my-1"><span>Assignment on Class-04 (Day- 13,14,15,16)</span> <span class=" p-1 rounded-pill bg-success">Present</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border border-1 my-2">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed ff" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Assignment List
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="border border-1">
+                    <p class="d-block d-flex justify-content-sm-between px-5 bg-success bg-opacity-25 my-1"><span>Class 1 Quiz</span> <span class=" p-1 rounded-pill bg-success">Done</span></p>
+                    <p class="d-block d-flex justify-content-sm-between px-5 bg-success bg-opacity-25 my-1"><span>Class 2 Quiz</span> <span class=" p-1 rounded-pill bg-success">Done</span></p>
+                    <p class="d-block d-flex justify-content-sm-between px-5 bg-success bg-opacity-25 my-1"><span>Class 3 Quiz</span> <span class=" p-1 rounded-pill bg-success">Done</span></p>
+                    <p class="d-block d-flex justify-content-sm-between px-5 bg-success bg-opacity-25 my-1"><span>Class 4 Quiz</span> <span class=" p-1 rounded-pill bg-success">Done</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border border-1 my-2">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed ff" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Practice Time Ratio
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <div class="d-flex flex-wrap">
+                      <div class="p-3 border border-1 me-4 mb-3 box-shadow" style="width: 20%; height: 80px;">
+                       <h5 class="text-center">Current Days Ratio</h5>
+                       <div class=" w-75 m-auto" style="height: 50%; background: #e9e7e7;"></div>
+                      </div>
+                      <div class="p-3 border border-1 me-4 mb-3 box-shadow" style="width: 20%; height: 80px;">
+                       <h5 class="text-center">Current Days Ratio</h5>
+                       <div class=" w-75 m-auto " style="height: 50%; background: #e9e7e7;"></div>
+                      </div>
+                      <div class="p-3 border border-1 me-4 mb-3 box-shadow" style="width: 20%; height: 80px;">
+                       <h5 class="text-center">Current Days Ratio</h5>
+                       <div class=" w-75 m-auto " style="height: 50%; background: #e9e7e7;"></div>
+                      </div>
+                      <div class="p-3 border border-1 me-4 mb-3 box-shadow" style="width: 20%; height: 80px;">
+                       <h5 class="text-center">Current Days Ratio</h5>
+                       <div class=" w-75 m-auto " style="height: 50%; background: #e9e7e7;"></div>
+                      </div>
+                      <div class="p-3 border border-1 me-4 mb-3 box-shadow" style="width: 20%; height: 80px;">
+                       <h5 class="text-center">Current Days Ratio</h5>
+                       <div class=" w-75 m-auto" style="height: 50%; background: #e9e7e7;"></div>
+                      </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border border-1 my-2">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed ff" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreee" aria-expanded="false" aria-controls="flush-collapseThreee">
+                  Video Watch Time
+                </button>
+              </h2>
+              <div id="flush-collapseThreee" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="d-flex justify-content-around">
+                    <div class="p-3 border border-1 me-4 box-shadow" style="width: 30%; height: 80px;">
+                     <h5 class="text-center">Current Days Ratio</h5>
+                     <div class=" w-75 m-auto mb-3" style="height: 50%; background: #e9e7e7;"></div>
+                    </div>
+                    <div class="p-3 border border-1 me-4 box-shadow" style="width: 30%; height: 80px;">
+                     <h5 class="text-center">Last Seven Days Ratio</h5>
+                     <div class=" w-100 m-auto mb-3" style="height: 50%; background: #23224c;"></div>
+                    </div>
+                    <div class="p-3 border border-1 me-4 box-shadow" style="width: 30%; height: 80px;">
+                     <h5 class="text-center">Last Seven Days Ratio</h5>
+                     <div class=" w-75 m-auto mb-3" style="height: 50%; background: #23224c;"></div>
+                    </div>
+                 </div>
+              </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border border-1 my-2">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed ff" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeee" aria-expanded="false" aria-controls="flush-collapseThreeee">
+                  Notification List
+                </button>
+              </h2>
+              <div id="flush-collapseThreeee" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body" style="height: 150px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- massage section  -->
+      <div class="massenger">
+        <a href="https://www.facebook.com/mehedihasan.rifat.52056"><i class="fa-brands fa-facebook-messenger"></i></a>
+      </div>
+
+
+      <!-- footer section  -->
+      <section>
+         <p class=" my-3">© 2023. Developed by Mehedi.com</p>
+      </section>
+    </main>
+
+
+    <!-- bootstrap 5 js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

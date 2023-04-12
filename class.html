@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- bootstrap 5 css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="https://app.sorobindu.com/web/img/fav.png" type="image/x-icon">
+    <!-- font awsoem  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- main css  -->
+    <link rel="stylesheet" href="sorobindo.css">
+
+    <title>sorobindo.com</title>
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar  navbar-expand-lg  px-4 ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="https://app.sorobindu.com/backend/assets/images/logo_light.png" style="width: 70px;" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 ms-5 mb-lg-0">
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active  text-light" aria-current="page" href="sorobindo.html"><span class="fa-solid fa-house"></span> Dashboard</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link text-light" href="overview.html">Overview</a>
+                  </li>
+                  
+                  <li class="nav-item mx-2">
+                    <a class="nav-link text-light" href="my-batch.html">My Batch</a>
+                  </li>
+                  
+                  <li class="nav-item mx-2">
+                    <a class="nav-link text-light" href="today-gol.html">Today Goal</a>
+                  </li>
+
+                               <!-- gggggggggggggggggg -->
+
+                  <li class="nav-item mx-2">
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Class list
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item " href="class.html">Class </a></li>
+                        <li><a class="dropdown-item " href="live-class.html"> Live Class</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link  text-light" href="improv.html">Improve Score</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link text-light" href="payment.html">Payments </a>
+                  </li>
+                            <!-- page kora baki ase  -->
+                  <li class="nav-item mx-2">
+                    <div class="dropdown">
+                      <button class="btn  dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Support
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">General Support </a></li>
+                        <li><a class="dropdown-item" href="#"> Marketplace Support</a></li>
+                        <li><a class="dropdown-item" href="#"> Co-Instructor Support </a></li>
+                        <li><a class="dropdown-item" href="#"> Course Instructions </a></li>
+                        <li><a class="dropdown-item" href="#"> Course Overview </a></li>
+                      </ul>
+                    </div>
+                  </li>
+
+                </ul>
+                <a href="" class="mx-3 text-light"><span class="fa-solid fa-comments"></span></a>
+                <div class="dropdown me-5">
+                  <button class="btn  dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Mehedi
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><i class=" me-1 fa-solid fa-user"></i>  My profile</a></li>
+                    <li><a class="dropdown-item" href="#"><i class=" me-1 fa-solid fa-book"></i> My Courses </a></li>
+                    <li><a class="dropdown-item" href="#"><i class=" me-1 fa-solid fa-money-bill"></i>  My Payments</a></li>
+                    <li><a class="dropdown-item" href="#"><i class=" me-1 fa-solid fa-certificate"></i>  My Certificate </a></li>
+                    <li><a class="dropdown-item" href="#"><i class=" me-1 fa-solid fa-trophy"></i>  My Success </a></li>
+                    <li><a class="dropdown-item" href="#"><i class=" me-1 fa-solid fa-right-from-bracket"></i>  Logout </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+      <div class="div w-100 border-bottom py-1">
+        <span class="fa-solid fa-house ms-4"></span> Home / class list / class
+      </div>
+
+      <section>
+         <div class="row mt-3">
+           <div class="col-lg-2 px-3">
+            <div class="border border-1">
+             <div class="p-3 bg-light-subtle">
+              <input type="search" class="form-control" placeholder="  🔎 Search">
+             </div>
+             <div>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item border">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed ff" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseone" aria-expanded="false" aria-controls="flush-collapseone">
+                      <small>Class &nbsp;1 <span class=" px-1 bg-info bg-opacity-50 rounded-1">( Completed )</span></small>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseone" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <a href="" class="text-decoration-none text-dark"><i class="fa-regular fa-square-plus"></i> Day 1 - Roles of Successful Freelancing এবং Freelancing নিয়ে বিস্তারিত <small class="bg-success text-light float-end px-1 ">00:24:50</small></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed ff" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      <small>Class &nbsp;2 <span class=" px-1 bg-info bg-opacity-50 rounded-1">( Completed )</span></small>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <a href="" class="text-decoration-none text-dark"><i class="fa-regular fa-square-plus"></i> Day 2 - Roles of Successful Freelancing এবং Freelancing নিয়ে বিস্তারিত <small class="bg-success text-light float-end px-1 ">00:24:50</small></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed ff" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <small>Class &nbsp;3 <span class=" px-1 bg-info bg-opacity-50 rounded-1">( Completed )</span></small>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><a href="" class="text-decoration-none text-dark"><i class="fa-regular fa-square-plus"></i> Day 3 - Roles of Successful Freelancing এবং Freelancing নিয়ে বিস্তারিত <small class="bg-success text-light float-end px-1 ">00:24:50</small></a></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed ff" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreee" aria-expanded="false" aria-controls="flush-collapseThreee">
+                      <small>Class &nbsp;4 <span class=" px-1 bg-info bg-opacity-50 rounded-1">( Completed )</span></small>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThreee" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><a href="" class="text-decoration-none text-dark"><i class="fa-regular fa-square-plus"></i> Day 4 - Roles of Successful Freelancing এবং Freelancing নিয়ে বিস্তারিত <small class="bg-success text-light float-end px-1 ">00:24:50</small></a></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed ff" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeee" aria-expanded="false" aria-controls="flush-collapseThreeee">
+                      <small>Class &nbsp;5 <span class=" px-1 bg-info bg-opacity-50 rounded-1">( Completed )</span></small>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThreeee" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><a href="" class="text-decoration-none text-dark"><i class="fa-regular fa-square-plus"></i> Day 5 - Roles of Successful Freelancing এবং Freelancing নিয়ে বিস্তারিত <small class="bg-success text-light float-end px-1 ">00:24:50</small></a></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed ff" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeeee" aria-expanded="false" aria-controls="flush-collapseThreeeee">
+                      <small>Class &nbsp;6 <span class=" px-1 bg-info bg-opacity-50 rounded-1">( Completed )</span></small>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThreeeee" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><a href="" class="text-decoration-none text-dark"><i class="fa-regular fa-square-plus"></i> Day 6 - Roles of Successful Freelancing এবং Freelancing নিয়ে বিস্তারিত <small class="bg-success text-light float-end px-1 ">00:24:50</small></a></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed ff" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeeeee" aria-expanded="false" aria-controls="flush-collapseThreeeeee">
+                      <small>Class &nbsp;7 <span class=" px-1 bg-info bg-opacity-50 rounded-1">( Completed )</span></small>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThreeeeee" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><a href="" class="text-decoration-none text-dark"><i class="fa-regular fa-square-plus"></i> Day 7 - Roles of Successful Freelancing এবং Freelancing নিয়ে বিস্তারিত <small class="bg-success text-light float-end px-1 ">00:24:50</small></a></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed ff" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeeeeee" aria-expanded="false" aria-controls="flush-collapseThreeeeeee">
+                      <small>Class &nbsp;8 <span class=" px-1 bg-info bg-opacity-50 rounded-1">( Completed )</span></small>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThreeeeeee" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><a href="" class="text-decoration-none text-dark"><i class="fa-regular fa-square-plus"></i> Day 8 - Roles of Successful Freelancing এবং Freelancing নিয়ে বিস্তারিত <small class="bg-success text-light float-end px-1 ">00:24:50</small></a></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed ff" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeeeeeee" aria-expanded="false" aria-controls="flush-collapseThreeeeeeee">
+                      <small>Class &nbsp;9 <span class=" px-1 bg-info bg-opacity-50 rounded-1">( Completed )</span></small>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThreeeeeeee" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><a href="" class="text-decoration-none text-dark"><i class="fa-regular fa-square-plus"></i> Day 9 - Roles of Successful Freelancing এবং Freelancing নিয়ে বিস্তারিত <small class="bg-success text-light float-end px-1 ">00:24:50</small></a></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed ff" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeeeeeeee" aria-expanded="false" aria-controls="flush-collapseThreeeeeeeee">
+                      <small>Class 10 <span class=" px-1 bg-info bg-opacity-50 rounded-1">( Completed )</span></small>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThreeeeeeeee" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><a href="" class="text-decoration-none text-dark"><i class="fa-regular fa-square-plus"></i> Day 10 - Roles of Successful Freelancing এবং Freelancing নিয়ে বিস্তারিত <small class="bg-success text-light float-end px-1 ">00:24:50</small></a></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed ff" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeeeeeeee1" aria-expanded="false" aria-controls="flush-collapseThreeeeeeeee1">
+                      <small>Class 11 <span class=" px-1 bg-info bg-opacity-50 rounded-1">( Completed )</span></small>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThreeeeeeeee1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><a href="" class="text-decoration-none text-dark"><i class="fa-regular fa-square-plus"></i> Day 11 - Roles of Successful Freelancing এবং Freelancing নিয়ে বিস্তারিত <small class="bg-success text-light float-end px-1 ">00:24:50</small></a></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed ff" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeeeeeee2" aria-expanded="false" aria-controls="flush-collapseThreeeeeeee2">
+                      <small>Class 12 <span class=" px-1 bg-info bg-opacity-50 rounded-1">( Completed )</span></small>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThreeeeeeee2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><a href="" class="text-decoration-none text-dark"><i class="fa-regular fa-square-plus"></i> Day 12 - Roles of Successful Freelancing এবং Freelancing নিয়ে বিস্তারিত <small class="bg-success text-light float-end px-1 ">00:24:50</small></a></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed ff" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeeeeeee3" aria-expanded="false" aria-controls="flush-collapseThreeeeeee3">
+                      <small>Class 13 <span class=" px-1 bg-info bg-opacity-50 rounded-1">( Completed )</span></small>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThreeeeeeee3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><a href="" class="text-decoration-none text-dark"><i class="fa-regular fa-square-plus"></i> Day 13 - Roles of Successful Freelancing এবং Freelancing নিয়ে বিস্তারিত <small class="bg-success text-light float-end px-1 ">00:24:50</small></a></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed ff" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeeeeeee4" aria-expanded="false" aria-controls="flush-collapseThreeeeeeee4">
+                      <small>Class 14 <span class=" px-1 bg-info bg-opacity-50 rounded-1">( Completed )</span></small>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThreeeeeeee4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><a href="" class="text-decoration-none text-dark"><i class="fa-regular fa-square-plus"></i> Day 14 - Roles of Successful Freelancing এবং Freelancing নিয়ে বিস্তারিত <small class="bg-success text-light float-end px-1 ">00:24:50</small></a></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-10 px-3">
+          <div class="border border-1 bg-light-subtle p-2">
+            <a href="" class="d-inline-block text-dark mx-3 text-decoration-none  p-1">Overview</a>
+            <a href="" class="d-inline-block text-dark mx-3 text-decoration-none p-1">Resource</a>
+            <a href="" class="d-inline-block text-dark mx-3 text-decoration-none p-1">Assignments</a>
+            <a href="" class="d-inline-block text-dark mx-3 text-decoration-none  p-1">Quiz</a>
+            <a href="" class="d-inline-block text-dark mx-3 text-decoration-none  p-1">Class Rec</a>
+            <a href="" class="d-inline-block text-dark mx-3 text-decoration-none  p-1">Activities</a>
+          </div>
+
+          <div class="mt-1 p-2 bg-light-subtle border border-1">
+            <p class="m-0">Class 1 Overview</p>
+          </div>
+          <div class="border border-1 py-5 px-3 bg-light-subtle">
+            <p class="fw-bold">After completing today’s class we will learn:</p>
+            <ul class="ms-2 mb-4">
+              <li>We will learn to make a website with bootstrap v5.</li>
+              <li>How to use bootstrap v5 classes(navbar, navbar-band, dropdown, btn, card, section, header, footer, text-dark, text-white, border-0 nav-item etc).</li>
+              <li>And Also learn how to use bootstrap v5 ( form-control, mt-5, my-4, pb-5, btn-outline-primary, btn-primary, shadow, placeholder, type, col, col-lg-4 etc).</li>
+            </ul>
+             <p class="fw-bold">Topic Discussed on video</p>
+             <p>Download all images from a webpage.</p>
+             <p>form-control, mt, mb, my, pt, pb, py, btn-outline-primary, btn-primary, shadow, placeholder, type, col, col-lg-4, navbar, navbar-band, dropdown, btn, card, section, header, footer, text-dark, text-white, border-0 nav-item, input type.etc</p>
+             <p>Bootstrap Grid Layout.</p>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <!-- massage section  -->
+     <div class="massenger">
+      <a href="https://www.facebook.com/mehedihasan.rifat.52056"><i class="fa-brands fa-facebook-messenger"></i></a>
+     </div>
+
+
+     <!-- footer section  -->
+     <section>
+       <p class="m-0 p-3 mt-3">&copy; Develop By Mehedi</p>
+     </section>
+    </main>
+
+
+    <!-- bootstrap 5 js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- bootstrap 5 css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+      <!-- favicon  -->
+      <link rel="shortcut icon" href="https://app.sorobindu.com/web/img/fav.png" type="image/x-icon">
+    <!-- font awsoem  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- main css  -->
+    <link rel="stylesheet" href="sorobindo.css">
+
+    <title>sorobindo.com</title>
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg  px-4 ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="https://app.sorobindu.com/backend/assets/images/logo_light.png" style="width: 70px;" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 ms-5 mb-lg-0">
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active  text-light" aria-current="page" href="sorobindo.html"><span class="fa-solid fa-house"></span> Dashboard</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link text-light" href="overview.html">Overview</a>
+                  </li>
+                  
+                  <li class="nav-item mx-2">
+                    <a class="nav-link text-light" href="my-batch.html">My Batch</a>
+                  </li>
+                  
+                  <li class="nav-item mx-2">
+                    <a class="nav-link text-light" href="today-gol.html">Today Goal</a>
+                  </li>
+
+                               <!-- gggggggggggggggggg -->
+
+                  <li class="nav-item mx-2">
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Class list
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item " href="class.html">Class </a></li>
+                        <li><a class="dropdown-item " href="live-class.html"> Live Class</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link  text-light" href="improv.html">Improve Score</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link text-light" href="payment.html">Payments </a>
+                  </li>
+                            <!-- page kora baki ase  -->
+                  <li class="nav-item mx-2">
+                    <div class="dropdown">
+                      <button class="btn  dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Support
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">General Support </a></li>
+                        <li><a class="dropdown-item" href="#"> Marketplace Support</a></li>
+                        <li><a class="dropdown-item" href="#"> Co-Instructor Support </a></li>
+                        <li><a class="dropdown-item" href="#"> Course Instructions </a></li>
+                        <li><a class="dropdown-item" href="#"> Course Overview </a></li>
+                      </ul>
+                    </div>
+                  </li>
+
+                </ul>
+                <a href="" class="mx-3 text-light"><span class="fa-solid fa-comments"></span></a>
+                <div class="dropdown me-5">
+                  <button class="btn  dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Mehedi
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><i class=" me-1 fa-solid fa-user"></i>  My profile</a></li>
+                    <li><a class="dropdown-item" href="#"><i class=" me-1 fa-solid fa-book"></i> My Courses </a></li>
+                    <li><a class="dropdown-item" href="#"><i class=" me-1 fa-solid fa-money-bill"></i>  My Payments</a></li>
+                    <li><a class="dropdown-item" href="#"><i class=" me-1 fa-solid fa-certificate"></i>  My Certificate </a></li>
+                    <li><a class="dropdown-item" href="#"><i class=" me-1 fa-solid fa-trophy"></i>  My Success </a></li>
+                    <li><a class="dropdown-item" href="#"><i class=" me-1 fa-solid fa-right-from-bracket"></i>  Logout </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+      <div class="div w-100 border-bottom py-1">
+        <span class="fa-solid fa-house ms-4"></span> Home / Today Goal
+      </div>
+
+      <section>
+        <div class="mt-4 border border-1 p-3 box-shadow-top">
+          <h5 class="text-center m-3"><span class="text-light p-1 bg-dark">Our Goal: </span> To Be A Successful Freelancer.</h5>
+          <p class="text-center">Just complete your everyday goal, one can't stop you to achieve your goal.</p>
+        </div>
+
+        <div class="mt-4 d-flex justify-class">
+          <div class="p-2 border border-1 me-4 mb-4 box-shadow-top-red" style="width: 20%; height: px;">
+            <h5 class="text-center">Daily Practice Ratio</h5> <br>
+            <div class=" w-75 m-auto mb-3 text-light fw-bold rounded-2  p-2" style=" background: #37474f;">
+              <span class="d-block w-75 bg-dark m-auto mt-2" style="height: 4px;"></span>
+              <p class="w-75 m-auto">0%</p>
+            </div>
+          </div>
+          <div class="p-2 border border-1 me-4 mb-4 box-shadow-top-green" style="width: 20%; height: px;">
+            <h5 class="text-center">Upcomming Class Resource: Class 21</h5>
+            <div class=" w-75 m-auto mb-3 text-light fw-bold rounded-2 text-center p-2" style=" background: #26a69a;">
+              <span class="fa-solid fa-right-long"></span> View Resource
+            </div>
+          </div>
+          <div class="p-2 border border-1 me-4 mb-4 box-shadow" style="width: 20%; height: px;">
+            <h5 class="text-center">Upcomming Class Resource: Class 21</h5>
+            <div class=" w-75 m-auto mb-3 text-light fw-bold rounded-2 text-center p-2" style=" background: #26a69a;">
+              <span class="fa-solid fa-right-long"></span> View Resource
+            </div>
+          </div>
+          <div class="p-2 border border-1 me-4 mb-4 box-shadow-top-primary" style="width: 20%; height: px;">
+            <h5 class="text-center">Upcomming Class Resource: Class 21</h5>
+            <div class=" w-75 m-auto mb-3 text-light fw-bold rounded-2 text-center p-2" style=" background: #26a69a;">
+              <span class="fa-solid fa-right-long"></span> View Resource
+            </div>
+          </div>
+          <div class="p-2 border border-1 me-4 mb-4 box-shadow-top-green" style="width: 20%; height: px;">
+            <h5 class="text-center">Upcomming Class Resource: Class 21</h5>
+            <div class=" w-75 m-auto mb-3 text-light fw-bold rounded-2 text-center p-2" style=" background: #26a69a;">
+              <span class="fa-solid fa-right-long"></span> View Resource
+            </div>
+          </div>
+          <div class="p-2 border border-1 me-4 mb-4 box-shadow" style="width: 20%; height: px;">
+            <h5 class="text-center">Upcomming Class Resource: Class 21</h5>
+            <div class=" w-75 m-auto mb-3 text-light fw-bold rounded-2 text-center p-2" style=" background:#26a69a;">
+              <span class="fa-solid fa-right-long"></span> View Resource
+          </div>
+        </div>
+      </section>
+
+      <!-- Schedule section -->
+      <section>
+        <div class="border border-1">
+          <div class="row">
+             <div class="col-md-6 px-4 py-3">
+               <h5 class="m-0">Weekly Schedule</h5>
+             </div>
+             <div class="col-md-6 text-end px-4 py-3">
+              <h5 class="m-0">
+                <i class="fa-solid fa-chevron-down mx-1"></i>
+                <i class="fa-solid fa-rotate-right mx-1"></i>
+                <i class="fa-solid fa-xmark mx-1"></i>
+              </h5>
+             </div>
+          </div>
+        </div>
+        <div class="border border-1">
+          <div class="row">
+             <div class="col-4 px-4 py-3">
+               <p><i class="fa-solid fa-square-check"></i> &nbsp; Sunday</p>
+               <p><input type="checkbox"> &nbsp; Monday</p> 
+               <p><i class="fa-solid fa-square-check"></i> &nbsp; Tuesday</p> 
+               <p><input type="checkbox"> &nbsp; Wednesday</p> 
+               <p><i class="fa-solid fa-square-check"></i> &nbsp; Thursday</p> 
+               <p><input type="checkbox"> &nbsp; Friday</p> 
+               <p><i class="fa-solid fa-square-check"></i> &nbsp; Saturday</p> 
+             </div>
+             <div class="col-4 px-4 py-3">
+               <p>10:00 PM</p> 
+               <p>.........</p> 
+               <p>10:00 PM</p> 
+               <p>.........</p> 
+               <p>10:00 PM</p> 
+               <p>.........</p> 
+               <p>.........</p> 
+             </div>
+             <div class="col-lg-4"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- massage section  -->
+      <div class="massenger">
+        <a href="https://www.facebook.com/mehedihasan.rifat.52056"><i class="fa-brands fa-facebook-messenger"></i></a>
+      </div>
+
+
+      <!-- footer section  -->
+      <section class="mt-3">
+       <p class="m-0 py-3"> © 2023. Developed by mehedi.com</p>
+      </section>
+    </main>
+
+
+    <!-- bootstrap 5 js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
